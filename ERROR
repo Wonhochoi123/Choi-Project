@@ -428,7 +428,7 @@ options:
 [DEBUG]:          File "/home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/hostpython3/desktop/hostpython3/Lib/ctypes/__init__.py", line 8, in <module>
 [DEBUG]:            from _ctypes import Union, Structure, Array
 [DEBUG]:        ModuleNotFoundError: No module named '_ctypes'
-Exception in thread background thread for pid 194276:
+Exception in thread background thread for pid 194702:
 Traceback (most recent call last):
   File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
     self.run()
@@ -529,7 +529,7 @@ ModuleNotFoundError: No module named '_ctypes'
 #     LANGUAGE = 'en_CA:en'
 #     GNOME_SHELL_SESSION_MODE = 'ubuntu'
 #     SSH_AUTH_SOCK = '/run/user/1000/keyring/ssh'
-#     TERM_SESSION_ID = '25929dcd-833c-4a23-9e1d-fee2b83d3f94'
+#     TERM_SESSION_ID = 'ba78b71f-4d2d-40f7-8605-1dcb67601916'
 #     SNAP_INSTANCE_KEY = ''
 #     XMODIFIERS = '@im=ibus'
 #     DESKTOP_SESSION = 'ubuntu'
