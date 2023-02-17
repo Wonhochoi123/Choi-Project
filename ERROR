@@ -145,7 +145,7 @@ options:
   --no-copy-libs        (this is the default)
 # Check application requirements
 # Compile platform
-# Run ['/usr/bin/python3', '-m', 'pythonforandroid.toolchain', 'create', '--dist_name=myapp', '--bootstrap=sdl2', '--requirements=kivy,pillow', '--arch=arm64-v8a', '--arch=armeabi-v7a', '--copy-libs', '--color=always', '--storage-dir=/home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a', '--ndk-api=21', '--ignore-setup-py', '--debug']
+# Run ['/usr/bin/python3', '-m', 'pythonforandroid.toolchain', 'create', '--dist_name=myapp', '--bootstrap=sdl2', '--requirements=python3,kivy', '--arch=arm64-v8a', '--arch=armeabi-v7a', '--copy-libs', '--color=always', '--storage-dir=/home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a', '--ndk-api=21', '--ignore-setup-py', '--debug']
 # Cwd /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/python-for-android
 [WARNING]: prerequisites.py is experimental and does not support all prerequisites yet.
 [WARNING]: Please report any issues to the python-for-android issue tracker.
@@ -161,38 +161,24 @@ options:
 [INFO]:    ccache is missing, the build will not be optimized in the future.
 [INFO]:    No existing dists meet the given requirements!
 [INFO]:    No dist exists that meets your requirements, so one will be built.
-[INFO]:    Found a single valid recipe set: ['freetype', 'hostpython3', 'jpeg', 'libffi', 'openssl', 'png', 'sdl2_image', 'sdl2_mixer', 'sdl2_ttf', 'sqlite3', 'python3', 'sdl2', 'setuptools', 'pillow', 'six', 'pyjnius', 'android', 'kivy']
+[INFO]:    Found a single valid recipe set: ['hostpython3', 'libffi', 'openssl', 'sdl2_image', 'sdl2_mixer', 'sdl2_ttf', 'sqlite3', 'python3', 'sdl2', 'setuptools', 'six', 'pyjnius', 'android', 'kivy']
 [INFO]:    The selected bootstrap is sdl2
 [INFO]:    # Creating dist with sdl2 bootstrap
-[INFO]:    Dist will have name myapp and requirements (kivy, pillow)
-[INFO]:    Dist contains the following requirements as recipes: ['freetype', 'hostpython3', 'jpeg', 'libffi', 'openssl', 'png', 'sdl2_image', 'sdl2_mixer', 'sdl2_ttf', 'sqlite3', 'python3', 'sdl2', 'setuptools', 'pillow', 'six', 'pyjnius', 'android', 'kivy']
+[INFO]:    Dist will have name myapp and requirements (python3, kivy)
+[INFO]:    Dist contains the following requirements as recipes: ['hostpython3', 'libffi', 'openssl', 'sdl2_image', 'sdl2_mixer', 'sdl2_ttf', 'sqlite3', 'python3', 'sdl2', 'setuptools', 'six', 'pyjnius', 'android', 'kivy']
 [INFO]:    Dist will also contain modules (certifi) installed from pip
 [INFO]:    Dist will be build in mode debug
 [INFO]:    -> directory context /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/bootstrap_builds/sdl2
 [INFO]:    <- directory context /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/python-for-android
-[INFO]:    Recipe build order is ['freetype', 'hostpython3', 'jpeg', 'libffi', 'openssl', 'png', 'sdl2_image', 'sdl2_mixer', 'sdl2_ttf', 'sqlite3', 'python3', 'sdl2', 'setuptools', 'pillow', 'six', 'pyjnius', 'android', 'kivy']
+[INFO]:    Recipe build order is ['hostpython3', 'libffi', 'openssl', 'sdl2_image', 'sdl2_mixer', 'sdl2_ttf', 'sqlite3', 'python3', 'sdl2', 'setuptools', 'six', 'pyjnius', 'android', 'kivy']
 [INFO]:    The requirements (certifi) were not found as recipes, they will be installed with pip.
 [INFO]:    # Downloading recipes 
-[INFO]:    Downloading freetype
-[DEBUG]:   -> running mkdir -p /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/packages/freetype
-[INFO]:    -> directory context /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/packages/freetype
-[DEBUG]:   -> running basename http://download.savannah.gnu.org/releases/freetype/freetype-2.10.1.tar.gz
-[DEBUG]:        freetype-2.10.1.tar.gz
-[INFO]:    freetype download already cached, skipping
-[INFO]:    <- directory context /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/python-for-android
 [INFO]:    Downloading hostpython3
 [DEBUG]:   -> running mkdir -p /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/packages/hostpython3
 [INFO]:    -> directory context /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/packages/hostpython3
 [DEBUG]:   -> running basename https://www.python.org/ftp/python/3.9.9/Python-3.9.9.tgz
 [DEBUG]:        Python-3.9.9.tgz
 [INFO]:    hostpython3 download already cached, skipping
-[INFO]:    <- directory context /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/python-for-android
-[INFO]:    Downloading jpeg
-[DEBUG]:   -> running mkdir -p /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/packages/jpeg
-[INFO]:    -> directory context /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/packages/jpeg
-[DEBUG]:   -> running basename https://github.com/libjpeg-turbo/libjpeg-turbo/archive/2.0.1.tar.gz
-[DEBUG]:        2.0.1.tar.gz
-[INFO]:    jpeg download already cached, skipping
 [INFO]:    <- directory context /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/python-for-android
 [INFO]:    Downloading libffi
 [DEBUG]:   -> running mkdir -p /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/packages/libffi
@@ -207,13 +193,6 @@ options:
 [DEBUG]:   -> running basename https://www.openssl.org/source/openssl-1.1.1m.tar.gz
 [DEBUG]:        openssl-1.1.1m.tar.gz
 [INFO]:    openssl download already cached, skipping
-[INFO]:    <- directory context /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/python-for-android
-[INFO]:    Downloading png
-[DEBUG]:   -> running mkdir -p /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/packages/png
-[INFO]:    -> directory context /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/packages/png
-[DEBUG]:   -> running basename https://github.com/glennrp/libpng/archive/v1.6.37.zip
-[DEBUG]:        v1.6.37.zip
-[INFO]:    png download already cached, skipping
 [INFO]:    <- directory context /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/python-for-android
 [INFO]:    Downloading sdl2_image
 [DEBUG]:   -> running mkdir -p /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/packages/sdl2_image
@@ -264,13 +243,6 @@ options:
 [DEBUG]:        setuptools-51.3.3.tar.gz
 [INFO]:    setuptools download already cached, skipping
 [INFO]:    <- directory context /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/python-for-android
-[INFO]:    Downloading Pillow
-[DEBUG]:   -> running mkdir -p /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/packages/Pillow
-[INFO]:    -> directory context /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/packages/Pillow
-[DEBUG]:   -> running basename https://github.com/python-pillow/Pillow/archive/8.4.0.tar.gz
-[DEBUG]:        8.4.0.tar.gz
-[INFO]:    Pillow download already cached, skipping
-[INFO]:    <- directory context /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/python-for-android
 [INFO]:    Downloading six
 [DEBUG]:   -> running mkdir -p /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/packages/six
 [INFO]:    -> directory context /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/packages/six
@@ -296,23 +268,11 @@ options:
 [INFO]:    <- directory context /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/python-for-android
 [INFO]:    # Building all recipes for arch arm64-v8a
 [INFO]:    # Unpacking recipes
-[INFO]:    Unpacking freetype for arm64-v8a
-[DEBUG]:   -> running basename http://download.savannah.gnu.org/releases/freetype/freetype-2.10.1.tar.gz
-[DEBUG]:        freetype-2.10.1.tar.gz
-[INFO]:    -> directory context /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/freetype/arm64-v8a__ndk_target_21
-[INFO]:    freetype is already unpacked, skipping
-[INFO]:    <- directory context /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/python-for-android
 [INFO]:    Unpacking hostpython3 for arm64-v8a
 [DEBUG]:   -> running basename https://www.python.org/ftp/python/3.9.9/Python-3.9.9.tgz
 [DEBUG]:        Python-3.9.9.tgz
 [INFO]:    -> directory context /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/hostpython3/desktop
 [INFO]:    hostpython3 is already unpacked, skipping
-[INFO]:    <- directory context /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/python-for-android
-[INFO]:    Unpacking jpeg for arm64-v8a
-[DEBUG]:   -> running basename https://github.com/libjpeg-turbo/libjpeg-turbo/archive/2.0.1.tar.gz
-[DEBUG]:        2.0.1.tar.gz
-[INFO]:    -> directory context /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/jpeg/arm64-v8a__ndk_target_21
-[INFO]:    jpeg is already unpacked, skipping
 [INFO]:    <- directory context /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/python-for-android
 [INFO]:    Unpacking libffi for arm64-v8a
 [DEBUG]:   -> running basename https://github.com/libffi/libffi/archive/v3.4.2.tar.gz
@@ -325,12 +285,6 @@ options:
 [DEBUG]:        openssl-1.1.1m.tar.gz
 [INFO]:    -> directory context /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_21
 [INFO]:    openssl is already unpacked, skipping
-[INFO]:    <- directory context /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/python-for-android
-[INFO]:    Unpacking png for arm64-v8a
-[DEBUG]:   -> running basename https://github.com/glennrp/libpng/archive/v1.6.37.zip
-[DEBUG]:        v1.6.37.zip
-[INFO]:    -> directory context /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/png/arm64-v8a__ndk_target_21
-[INFO]:    png is already unpacked, skipping
 [INFO]:    <- directory context /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/python-for-android
 [INFO]:    Unpacking sdl2_image for arm64-v8a
 [DEBUG]:   -> running basename https://github.com/libsdl-org/SDL_image/releases/download/release-2.6.2/SDL2_image-2.6.2.tar.gz
@@ -374,12 +328,6 @@ options:
 [INFO]:    -> directory context /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/setuptools/arm64-v8a__ndk_target_21
 [INFO]:    setuptools is already unpacked, skipping
 [INFO]:    <- directory context /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/python-for-android
-[INFO]:    Unpacking Pillow for arm64-v8a
-[DEBUG]:   -> running basename https://github.com/python-pillow/Pillow/archive/8.4.0.tar.gz
-[DEBUG]:        8.4.0.tar.gz
-[INFO]:    -> directory context /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/Pillow/arm64-v8a__ndk_target_21
-[INFO]:    Pillow is already unpacked, skipping
-[INFO]:    <- directory context /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/python-for-android
 [INFO]:    Unpacking six for arm64-v8a
 [DEBUG]:   -> running basename https://pypi.python.org/packages/source/s/six/six-1.15.0.tar.gz
 [DEBUG]:        six-1.15.0.tar.gz
@@ -401,22 +349,16 @@ options:
 [INFO]:    kivy is already unpacked, skipping
 [INFO]:    <- directory context /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/python-for-android
 [INFO]:    # Prebuilding recipes
-[INFO]:    Prebuilding freetype for arm64-v8a
-[INFO]:    freetype has no prebuild_arm64_v8a, skipping
 [INFO]:    Prebuilding hostpython3 for arm64-v8a
 [INFO]:    hostpython3 has no prebuild_arm64_v8a, skipping
 [INFO]:    Applying patches for hostpython3[arm64-v8a]
 [INFO]:    hostpython3 already patched, skipping
-[INFO]:    Prebuilding jpeg for arm64-v8a
-[INFO]:    jpeg has no prebuild_arm64_v8a, skipping
 [INFO]:    Prebuilding libffi for arm64-v8a
 [INFO]:    libffi has no prebuild_arm64_v8a, skipping
 [INFO]:    Applying patches for libffi[arm64-v8a]
 [INFO]:    libffi already patched, skipping
 [INFO]:    Prebuilding openssl for arm64-v8a
 [INFO]:    openssl has no prebuild_arm64_v8a, skipping
-[INFO]:    Prebuilding png for arm64-v8a
-[INFO]:    png has no prebuild_arm64_v8a, skipping
 [INFO]:    Prebuilding sdl2_image for arm64-v8a
 [INFO]:    sdl2_image has no prebuild_arm64_v8a, skipping
 [INFO]:    Applying patches for sdl2_image[arm64-v8a]
@@ -437,10 +379,6 @@ options:
 [INFO]:    sdl2 already patched, skipping
 [INFO]:    Prebuilding setuptools for arm64-v8a
 [INFO]:    setuptools has no prebuild_arm64_v8a, skipping
-[INFO]:    Prebuilding Pillow for arm64-v8a
-[INFO]:    Pillow has no prebuild_arm64_v8a, skipping
-[INFO]:    Applying patches for Pillow[arm64-v8a]
-[INFO]:    Pillow already patched, skipping
 [INFO]:    Prebuilding six for arm64-v8a
 [INFO]:    six has no prebuild_arm64_v8a, skipping
 [INFO]:    Prebuilding pyjnius for arm64-v8a
@@ -456,23 +394,14 @@ options:
 [INFO]:    Applying patches for kivy[arm64-v8a]
 [INFO]:    kivy already patched, skipping
 [INFO]:    # Building recipes
-[INFO]:    Building freetype for arm64-v8a
-[INFO]:    freetype said it is already built, skipping
-[DEBUG]:   -> running cp /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/freetype/arm64-v8a__ndk_target_21/freetype/objs/.libs/libfreetype.so /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/libs_collections/myapp/arm64-v8a
 [INFO]:    Building hostpython3 for arm64-v8a
 [INFO]:    hostpython3 said it is already built, skipping
-[INFO]:    Building jpeg for arm64-v8a
-[INFO]:    jpeg said it is already built, skipping
-[WARNING]: install_libs called with no libraries to install!
 [INFO]:    Building libffi for arm64-v8a
 [INFO]:    libffi said it is already built, skipping
 [DEBUG]:   -> running cp /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/libffi/arm64-v8a__ndk_target_21/libffi/.libs/libffi.so /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/libs_collections/myapp/arm64-v8a
 [INFO]:    Building openssl for arm64-v8a
 [INFO]:    openssl said it is already built, skipping
 [DEBUG]:   -> running cp /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_21/openssl1.1/libssl1.1.so /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_21/openssl1.1/libcrypto1.1.so /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/libs_collections/myapp/arm64-v8a
-[INFO]:    Building png for arm64-v8a
-[INFO]:    png said it is already built, skipping
-[DEBUG]:   -> running cp /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/png/arm64-v8a__ndk_target_21/png/.libs/libpng16.so /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/libs_collections/myapp/arm64-v8a
 [INFO]:    Building sdl2_image for arm64-v8a
 [INFO]:    Building sdl2_mixer for arm64-v8a
 [INFO]:    Building sdl2_ttf for arm64-v8a
@@ -499,7 +428,7 @@ options:
 [DEBUG]:          File "/home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/hostpython3/desktop/hostpython3/Lib/ctypes/__init__.py", line 8, in <module>
 [DEBUG]:            from _ctypes import Union, Structure, Array
 [DEBUG]:        ModuleNotFoundError: No module named '_ctypes'
-Exception in thread background thread for pid 184422:
+Exception in thread background thread for pid 186002:
 Traceback (most recent call last):
   File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
     self.run()
@@ -584,7 +513,7 @@ ModuleNotFoundError: No module named '_ctypes'
 
   STDERR:
 
-# Command failed: ['/usr/bin/python3', '-m', 'pythonforandroid.toolchain', 'create', '--dist_name=myapp', '--bootstrap=sdl2', '--requirements=kivy,pillow', '--arch=arm64-v8a', '--arch=armeabi-v7a', '--copy-libs', '--color=always', '--storage-dir=/home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a', '--ndk-api=21', '--ignore-setup-py', '--debug']
+# Command failed: ['/usr/bin/python3', '-m', 'pythonforandroid.toolchain', 'create', '--dist_name=myapp', '--bootstrap=sdl2', '--requirements=python3,kivy', '--arch=arm64-v8a', '--arch=armeabi-v7a', '--copy-libs', '--color=always', '--storage-dir=/home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a', '--ndk-api=21', '--ignore-setup-py', '--debug']
 # ENVIRONMENT:
 #     SHELL = '/bin/bash'
 #     SESSION_MANAGER = 'local/wonbuntu:@/tmp/.ICE-unix/1803,unix/wonbuntu:/tmp/.ICE-unix/1803'
@@ -600,7 +529,7 @@ ModuleNotFoundError: No module named '_ctypes'
 #     LANGUAGE = 'en_CA:en'
 #     GNOME_SHELL_SESSION_MODE = 'ubuntu'
 #     SSH_AUTH_SOCK = '/run/user/1000/keyring/ssh'
-#     TERM_SESSION_ID = 'e5305aff-2c3b-4fe7-893b-79fb19fe3fb4'
+#     TERM_SESSION_ID = 'd6cf31e2-6da5-482a-824e-7be4d3aa9565'
 #     SNAP_INSTANCE_KEY = ''
 #     XMODIFIERS = '@im=ibus'
 #     DESKTOP_SESSION = 'ubuntu'
