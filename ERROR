@@ -401,7 +401,7 @@ options:
 [DEBUG]:   -> running cp /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/libffi/arm64-v8a__ndk_target_21/libffi/.libs/libffi.so /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/libs_collections/myapp/arm64-v8a
 [INFO]:    Building openssl for arm64-v8a
 [INFO]:    openssl said it is already built, skipping
-[DEBUG]:   -> running cp /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_21/openssl1.1/libssl1.1.so /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_21/openssl1.1/libcrypto1.1.so /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/libs_collections/myapp/arm64-v8a
+[DEBUG]:   -> running cp /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_21/openssl1.1/libcrypto1.1.so /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/openssl/arm64-v8a__ndk_target_21/openssl1.1/libssl1.1.so /home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/libs_collections/myapp/arm64-v8a
 [INFO]:    Building sdl2_image for arm64-v8a
 [INFO]:    Building sdl2_mixer for arm64-v8a
 [INFO]:    Building sdl2_ttf for arm64-v8a
@@ -428,7 +428,7 @@ options:
 [DEBUG]:          File "/home/wonho/PycharmProjects/choi-project/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/hostpython3/desktop/hostpython3/Lib/ctypes/__init__.py", line 8, in <module>
 [DEBUG]:            from _ctypes import Union, Structure, Array
 [DEBUG]:        ModuleNotFoundError: No module named '_ctypes'
-Exception in thread background thread for pid 188317:
+Exception in thread background thread for pid 194276:
 Traceback (most recent call last):
   File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
     self.run()
@@ -529,7 +529,7 @@ ModuleNotFoundError: No module named '_ctypes'
 #     LANGUAGE = 'en_CA:en'
 #     GNOME_SHELL_SESSION_MODE = 'ubuntu'
 #     SSH_AUTH_SOCK = '/run/user/1000/keyring/ssh'
-#     TERM_SESSION_ID = '875f8d35-4ea8-47a7-8afc-2f4740793add'
+#     TERM_SESSION_ID = '25929dcd-833c-4a23-9e1d-fee2b83d3f94'
 #     SNAP_INSTANCE_KEY = ''
 #     XMODIFIERS = '@im=ibus'
 #     DESKTOP_SESSION = 'ubuntu'
