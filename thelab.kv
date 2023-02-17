@@ -1,0 +1,134 @@
+WindowManager:
+    MainWindow:
+    SecondWindow:
+    SecondWindow1:
+<MainWindow>:
+    name: "main"
+    PageLayout:
+
+        BoxLayout:
+
+            size_hint: [1, 0.1]
+            canvas.before:
+                Color:
+                    rgba: (1, 1, 1, 1)
+                Rectangle:
+                    source:'resources/bg/2.png'
+                    size: root.width, root.height
+                    pos: self.pos
+
+            Button:
+                size_hint: [1, 0.1]
+                text: "Tutorial 4X4"
+
+                on_release:
+
+                    app.root.current = "gamewindow"
+                    root.manager.transition.direction = "left"
+                    root.Tutorial_4x4()
+            Button:
+                size_hint: [1, 0.1]
+                text: "Local 4X4"
+
+                on_release:
+
+                    app.root.current = "gamewindow"
+                    root.manager.transition.direction = "left"
+                    root.Local_4x4()
+        BoxLayout:
+
+            size_hint: [1, 0.1]
+            canvas.before:
+                Color:
+                    rgba: (1, 1, 1, 1)
+                Rectangle:
+                    source:'resources/bg/3.png'
+                    size: root.width, root.height
+                    pos: self.pos
+
+            Button:
+                size_hint: [1, 0.1]
+                text: "Tutorial 3X3"
+
+                on_release:
+
+                    app.root.current = "gamew"
+                    root.manager.transition.direction = "left"
+                    root.Tutorial_3x3()
+            Button:
+                size_hint: [1, 0.1]
+                text: "Local 3X3"
+
+                on_release:
+
+                    app.root.current = "gamew"
+                    root.manager.transition.direction = "left"
+                    root.Local_3x3()
+
+
+
+<SecondWindow>:
+    name: "gamewindow"
+    BoxLayout:
+        Game
+<SecondWindow1>:
+    name: "gamew"
+    BoxLayout:
+
+
+
+
+<Game>:
+    id: main_win
+    orientation: "vertical"
+    spacing: 10
+    space_x: self.size[0]/3
+
+
+    canvas.before:
+        Color:
+            rgba: (1, 1, 1, 1)
+        Rectangle:
+            source:'resources/bg/2.jpg'
+            size: root.width, root.height
+            pos: self.pos
+
+<CircularAnchor>:
+    col: (1,1,1,0)
+    canvas:
+        Color:
+            rgba: self.col
+        RoundedRectangle:
+            size: (self.size)
+            pos: (self.pos)
+            radius: [400,]
+
+<TimeFrame>:
+    canvas.before:
+        BorderImage:
+            # BorderImage behaves like the CSS BorderImage
+            border: 0, 0, 0, 0
+            texture: self.background_image.texture
+            pos: self.pos
+            size: self.size
+
+<TimeFrameMy>:
+    canvas.before:
+        BorderImage:
+            # BorderImage behaves like the CSS BorderImage
+            border: 0, 0, 0, 0
+            texture: self.background_image.texture
+            pos: self.pos
+            size: self.size
+
+<CustomLayout>:
+    canvas.before:
+        BorderImage:
+            # BorderImage behaves like the CSS BorderImage
+            border: 0, 0, 0, 0
+            texture: self.background_image.texture
+            pos: self.pos
+            size: self.size
+<RootWidget>:
+    CustomLayout:
+        pos_hint: {'center_x': .5, 'center_y': .5}
